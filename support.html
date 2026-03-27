@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Support page for Winter Fishing Master by Martin Zub." />
+  <meta name="theme-color" content="#0c1826" />
+  <title>Support — Winter Fishing Master</title>
+  <style>
+    :root {
+      --bg1: #07111a;
+      --bg2: #12283b;
+      --text: #eef8ff;
+      --muted: #bfd4e6;
+      --card: rgba(255,255,255,.07);
+      --line: rgba(255,255,255,.12);
+      --accent: #8ce6ff;
+      --accent2: #dffaff;
+      --radius: 24px;
+      --shadow: 0 20px 55px rgba(0,0,0,.35);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 0% 0%, rgba(140,230,255,.12), transparent 22%),
+        radial-gradient(circle at 100% 20%, rgba(223,250,255,.12), transparent 22%),
+        linear-gradient(180deg, var(--bg1), var(--bg2));
+      min-height: 100vh;
+    }
+    .wrap { width: min(980px, calc(100% - 24px)); margin: 0 auto; padding: max(18px, env(safe-area-inset-top)) 0 30px; }
+    .nav { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 16px; }
+    .nav a {
+      text-decoration: none; color: var(--text); padding: 11px 15px; border-radius: 999px;
+      background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1);
+    }
+    .nav a:hover { background: rgba(255,255,255,.11); }
+    .hero, .section {
+      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.05));
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      box-shadow: var(--shadow);
+    }
+    .hero { padding: 26px 22px; }
+    .tag {
+      display: inline-block; padding: 8px 12px; border-radius: 999px; font-size: .8rem;
+      text-transform: uppercase; letter-spacing: .12em; color: var(--accent2);
+      background: rgba(140,230,255,.12); border: 1px solid rgba(140,230,255,.22);
+    }
+    h1 { margin: 14px 0 10px; font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1; }
+    .lead, p { color: var(--muted); line-height: 1.8; }
+    .section { margin-top: 18px; padding: 20px; }
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .mini {
+      padding: 18px; border-radius: var(--radius); background: var(--card); border: 1px solid rgba(255,255,255,.09);
+    }
+    .email-box {
+      margin-top: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: rgba(140,230,255,.1);
+      border: 1px solid rgba(140,230,255,.2);
+      color: var(--accent2);
+      text-decoration: none;
+      font-weight: 700;
+      word-break: break-word;
+    }
+    ul { margin: 0; padding-left: 18px; }
+    li { color: var(--muted); line-height: 1.8; }
+    .foot { margin-top: 18px; color: var(--muted); }
+    @media (max-width: 720px) {
+      .grid { grid-template-columns: 1fr; }
+      .wrap { width: min(100% - 16px, 980px); }
+      .nav a { flex: 1 1 calc(50% - 8px); text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="marketing.html">Marketing</a>
+    </nav>
+
+    <section class="hero">
+      <span class="tag">Support URL</span>
+      <h1>Support for Winter Fishing Master</h1>
+      <p class="lead">
+        This page is the public support contact point for the application. Users, reviewers, and platform moderators can use it
+        to identify the developer and reach the official contact address.
+      </p>
+      <div class="email-box" role="text" aria-label="Email address">✉️ zoomko@atomicmail.io</div>
+    </section>
+
+    <section class="section">
+      <div class="grid">
+        <div class="mini">
+          <h2 style="margin-top:0;">Developer Information</h2>
+          <p><strong>Developer name:</strong> Martin Zub</p>
+          <p><strong>Application:</strong> Winter Fishing Master</p>
+          <p><strong>Official contact:</strong> zoomko@atomicmail.io</p>
+        </div>
+        <div class="mini">
+          <h2 style="margin-top:0;">What support covers</h2>
+          <ul>
+            <li>General questions about the app</li>
+            <li>Basic troubleshooting and usage issues</li>
+            <li>Feedback about the app experience</li>
+            <li>Questions related to the public privacy statement</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 style="margin-top:0;">Support Commitment</h2>
+      <p>
+        Martin Zub aims to provide a transparent and respectful support route for Winter Fishing Master. This page exists to show that the app has
+        an identifiable publisher, a public contact channel, and a clear point of communication for users and reviewers.
+      </p>
+      <div class="foot">© 2026 Martin Zub — Official support page</div>
+    </section>
+  </div>
+</body>
+</html>
