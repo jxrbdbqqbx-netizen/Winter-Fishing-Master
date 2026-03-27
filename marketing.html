@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Marketing and product vision page for Winter Fishing Master by Martin Zub." />
+  <meta name="theme-color" content="#091522" />
+  <title>Marketing — Winter Fishing Master</title>
+  <style>
+    :root {
+      --bg1: #06111b;
+      --bg2: #12273b;
+      --text: #eef8ff;
+      --muted: #bdd3e4;
+      --line: rgba(255,255,255,.11);
+      --accent: #9be7ff;
+      --accent2: #e7fbff;
+      --radius: 26px;
+      --shadow: 0 22px 60px rgba(0,0,0,.36);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 15% 10%, rgba(155,231,255,.15), transparent 24%),
+        radial-gradient(circle at 80% 0%, rgba(231,251,255,.14), transparent 18%),
+        linear-gradient(180deg, var(--bg1), var(--bg2));
+      min-height: 100vh;
+    }
+    .wrap { width: min(1060px, calc(100% - 24px)); margin: 0 auto; padding: max(18px, env(safe-area-inset-top)) 0 30px; }
+    .nav { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 18px; }
+    .nav a {
+      text-decoration: none; color: var(--text); padding: 11px 15px; border-radius: 999px;
+      background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.11);
+    }
+    .nav a:hover { background: rgba(255,255,255,.11); }
+    .hero {
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.09), rgba(255,255,255,.05)),
+        radial-gradient(circle at 85% 10%, rgba(155,231,255,.18), transparent 24%);
+      border: 1px solid var(--line);
+      border-radius: 34px;
+      box-shadow: var(--shadow);
+      padding: 28px 22px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 240px;
+      height: 240px;
+      right: -70px;
+      bottom: -70px;
+      background: radial-gradient(circle, rgba(155,231,255,.18), transparent 68%);
+      border-radius: 50%;
+    }
+    .tag {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(155,231,255,.11);
+      border: 1px solid rgba(155,231,255,.22);
+      color: var(--accent2);
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-size: .8rem;
+    }
+    h1 { margin: 14px 0 10px; font-size: clamp(2rem, 5vw, 3.8rem); line-height: .98; }
+    .lead, p, li { color: var(--muted); line-height: 1.8; }
+    .grid {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 18px;
+    }
+    .card {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.09);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 22px;
+    }
+    .list {
+      display: grid;
+      gap: 12px;
+      margin-top: 14px;
+    }
+    .item {
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.08);
+    }
+    .value-strip {
+      margin-top: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .value-pill {
+      padding: 10px 13px;
+      border-radius: 999px;
+      color: var(--accent2);
+      background: rgba(155,231,255,.1);
+      border: 1px solid rgba(155,231,255,.18);
+    }
+    ul { margin: 0; padding-left: 18px; }
+    .foot { margin-top: 18px; color: var(--muted); }
+    @media (max-width: 760px) {
+      .grid { grid-template-columns: 1fr; }
+      .wrap { width: min(100% - 16px, 1060px); }
+      .nav a { flex: 1 1 calc(50% - 8px); text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="support.html">Support</a>
+    </nav>
+
+    <section class="hero">
+      <span class="tag">Marketing URL</span>
+      <h1>Winter Fishing Master is being built with care, honesty, and long-term ambition.</h1>
+      <p class="lead">
+        Martin Zub is an early-stage independent developer working hard to improve the app step by step.
+        The current goal is to create a useful and enjoyable product experience while maintaining a clear, open presentation for users and reviewers.
+      </p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2 style="margin-top:0;">Current Product Position</h2>
+        <p>
+          Winter Fishing Master currently does not include paid features or subscription plans. At this stage, the focus is on development,
+          stability, presentation quality, and building user trust.
+        </p>
+        <div class="list">
+          <div class="item"><strong>Current monetization:</strong> No paid functions and no subscriptions at the moment.</div>
+          <div class="item"><strong>Future plan:</strong> Paid options or subscription features may be introduced later to support continued development and provide income.</div>
+          <div class="item"><strong>Current priority:</strong> Deliver value first and improve the application over time.</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2 style="margin-top:0;">Developer Message</h2>
+        <p>
+          The developer is at the beginning of the journey and is making a real effort to build something meaningful.
+          The project is being developed with attention, persistence, and a desire to create value instead of making exaggerated promises.
+        </p>
+        <div class="value-strip">
+          <span class="value-pill">Independent development</span>
+          <span class="value-pill">Transparent communication</span>
+          <span class="value-pill">Long-term improvement</span>
+          <span class="value-pill">User value first</span>
+        </div>
+      </article>
+
+      <article class="card" style="grid-column: 1 / -1;">
+        <h2 style="margin-top:0;">What this page is meant to show</h2>
+        <ul>
+          <li>The app is backed by a visible and identifiable developer account.</li>
+          <li>The project is in active growth and is presented honestly.</li>
+          <li>No premium tools or subscription systems are currently in place.</li>
+          <li>Future monetization may be added responsibly to sustain development.</li>
+          <li>The intention is to provide value through ongoing improvements and clearer product quality over time.</li>
+        </ul>
+        <p class="foot">Developer: Martin Zub • App: Winter Fishing Master • Contact: zoomko@atomicmail.io</p>
+      </article>
+    </section>
+  </div>
+</body>
+</html>
